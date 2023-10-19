@@ -13,18 +13,53 @@
     <style>
       .navigation {
         background-color: #ff7f50;
+        height: 200px;
+        display: flex;
       }
       .product-list {
         background-color: #006400;
+        height: 200px;
+        display: flex;
       }
       .news {
         background-color: #0ff;
+        height: 200px;
+        display: flex;
       }
+      span {
+        text-transform: lowercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 8px;
+        background-color: #faebd7;
+        border-radius: 4px;
+        margin: auto;
+      }
+      @media screen and (min-width: 600px) {
+        .products {
+          display: flex;
+        }
+      }
+      @media screen and (min-width: 900px) {
+        div {
+          display: flex;
+          flex-grow: 1;
+          flex-shrink: 0;
+        }
+      }
+      /* @media screen and (min-width: 900px) {
+        .content {
+          display: flex;
+        }
+      } */
     </style>
   </head>
   <body>
-    <div class="navigation">Navigation</div>
-    <div class="product-list">Product List</div>
-    <div class="news">News</div>
+    <main class="content">
+      <section class="products">
+        <div class="navigation"><span>navigation</span></div>
+        <div class="product-list"><span>product list</span></div>
+        <div class="news"><span>news</span></div>
+      </section>
+    </main>
   </body>
 </html>
