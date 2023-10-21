@@ -10,6 +10,23 @@
       integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
       crossorigin="anonymous"
     />
+    <style>
+      main {
+        display: flex;
+      }
+      picture {
+        max-width: 100%;
+        margin: auto;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <picture>
+        <source srcset="big.jpeg" media="(min-width: 400px)" />
+        <source srcset="small.jpg" />
+        <img src="big.jpeg" alt="" />
+      </picture>
+    </main>
+  </body>
 </html>
